@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 1000px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .img{
+            border: 1px solid black;
+            height: 300px;
+            background-color: beige;
+        }
+        .text{
+            margin-top: 10px;
+            border: 1px solid black;
+            height: 300px;
+            background-color: beige;
+            font-size: 19px;
+        }
+        .config{
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            width: 400px;
+            margin-top: 10px;
+        }
+        .config button{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="img"></div>
+        <div class="text"></div>
+        <div class="config">
+            <button onclick="func('back')">Назад</button>
+            <button onclick="func('start', this)">Start</button>
+            <button onclick="func('forward')">Вперед</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
